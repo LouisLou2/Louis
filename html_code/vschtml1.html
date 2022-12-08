@@ -1,0 +1,69 @@
+<DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+  <title>name:vschtmi1.html</title> 
+</head>
+<body>
+   <div>
+        <p>i m goonna show you a pic.</p>
+        <img src="https://s2.loli.net/2022/11/27/dA8xpCTgYuibGPN.jpg" 
+        alt="a pic" title="just a pic" width="100"/>
+        <!--用width和height以自由调节图片的拉伸，如果只想等比例放大或缩小，调节一个参数即可-->
+
+        <h4>im gonna show you a link(1st)</h4>
+        <a href="https://smms.app/" target="blank">图床</a>
+        <!--第一次点击打开新标签页，而后多次点击覆盖此新标签页-->
+
+        <h4>im gonna show you a link(2nd)</h4>
+        <a href="https://smms.app/" target="_blank">图床</a>
+        <!--第一次点击打开新标签页，而后多次点击不断打开新标签页-->
+        <h4>im gonna show you a link(3rd)</h4>
+        <a href="https://smms.app/" target="_self">图床</a>
+        <!--点击会在本页面覆盖,如果不加target属性也是这个效果-->
+
+        <h5>接下来是嵌套&lta&gt和&ltimg&gt</h5>
+        <a href="https://smms.app/image/dA8xpCTgYuibGPN" target="blank"
+        ><img src="https://s2.loli.net/2022/11/27/dA8xpCTgYuibGPN.jpg" height="50" ></a>
+        <!-- <a href="#">这里就是嵌套的地方</a> 点击此图片打开链接-->
+    </div>
+    <div>
+        <h5>用&ita&gt转到另一个html文件</h5>
+        <a href="vschtmi2.html"target="blank">打开vschtml2.html</a>
+
+        <!--空连接先用#代替即可  -->
+        <!--如果href指向的是一个压缩包或者文件，点击该超链接会下载此文件，
+        这个文件在写的时候也可以选择绝对路径或者相对路径。-->
+        <h4>a link to download a file示例</h4>
+        <a href="D:\桌面\RED上.docx">download RED上.docx></a>
+    </div>   
+        <h5>锚点链接尝试</h5>
+        <h6>这是一篇示例文章</h6>
+        <h6 id="gener">folklore概览</h6>
+            <p>《Folklore》是美国女歌手泰勒·斯威夫特的第八张录音室专辑，
+                专辑的音乐制作人由泰勒·斯威夫特、亚伦·德斯纳等担任，
+                标准版唱片内部共收录16首歌曲，豪华版唱片则多收录一首歌曲，
+                于2020年7月24日通过环球唱片公司发行。
+            </p>
+            <p>
+                在《Folklore》复古黑白色调封面的衬托、摄影师贝丝·加拉布兰特的诠释下，
+                泰勒·斯威夫特不再是五光十色、绚丽华美的，而是内心敏感、需要治愈的。
+                《Folklore》是一张突破泰勒·斯威夫特固有风格的专辑，她的声音变得冷静而节制，
+                不再有之前汹涌的控诉和骄傲的自信，多的是于无声处听惊雷的力量，
+                她仿佛卸下了束缚和愤怒，转而陷入思索。<br></br>
+                隔离生活让泰勒·斯威夫特在该专辑中变得比以往更加温柔，甚至有些忧伤，
+                她重拾她拿手的风格，用简单的音乐形式将一个个故事娓娓道来
+            </p>
+        <h6 id="pic">folklore写真:</h6>
+            <img src="https://s2.loli.net/2022/11/27/wcrBWEqRTQkjCDL.png" 
+            alt="folklore" title="folklore写真"/>
+        </br>
+        <a href="#gener">转到folklore概览</a>
+
+
+
+        <h6>done</h6>
+    
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="3;url=table.html">
+    <!--设置打开此页面隔3秒跳转到另外一个页面，
+    url也可以写网址,如https://www.bilibili.com/-->
+    <!--  <meta http-equiv="refresh" content="10">  默认每隔10秒刷新本页面。--> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><font color="blue">Register As a Teacher</font></h1>
+    <h5 style="color:blue">教师信息注册</h5>
+    <form action="imakeup.php" method="get">
+         <label for="tcn">Name:</label><!--确保label里面的for属性指向id值-->
+                &emsp;&emsp;&ensp;
+                <input type="text" name="tcn" id="tcn"value="Mrs.Yang" size="20" maxlength="15"> 
+         <br>
+         Sex:
+                &emsp;&emsp;&emsp;&emsp;
+                <label for="sexm">male</label><input type="radio" name="sex" id="sexm"> &ensp;
+                <label for="sexw">female</label><input type="radio" name="sex" id="sexw"checked>
+         <br>
+         Birthday:<input type="date">
+         <br>
+         Department:&ensp;
+                <select>
+                    <option value="A">Automation</option>
+                    <option value="C"selected>Computer Science</option>
+                    <option value="S">Software</option>
+                </select>
+         <br>
+         ID:
+                &emsp;&emsp;&ensp;
+                </div><input type="text" name="idnum" size="20" maxlength="12"> 
+         <br>  
+         Upload Propile
+                <input type="file" value="choodse picture" mutiple="mutiple"/>
+                <!--mutiple 来选择多个文件，value没用-->
+            <br>
+                
+         Choose the day you want to be informed:</br>
+                Monday<input type="checkbox" name="day" value="1">
+                Tuesday<input type="checkbox" name="day" value="2">
+                wednsday<input type="checkbox" name="wed" value="3>
+                Thursday<input type="checkbox" name="day" value="4">
+                Friday<input type="checkbox" name="day" value="5" checked>
+                Saturday<input type="checkbox" name="day" value="6">
+                Sunday<input type="checkbox" name="day" value="0">
+            <br> 
+            <p>Short Intro:</p>
+         Short Intro:
+                <textarea cols="50" rows="7">just write some neccessary pieces of your past.
+
+
+
+
+                </textarea>
+            <br>
+         Password:&ensp; <input type="password" name="psw"size="20" maxlength="18" > 
+         <br>
+         your email:<input type="email" value="@gmail.com">&emsp;<input type="button" value="get secret code">
+         <br>
+         The Secret Code:<input type="text" size="10" maxlength="6">
+         <br>
+         Phone Number:<input type="Number" />
+         <br>
+         <input type="submit" value="submit the info"><!--若不阻止，用户没有输入直接提交，服务器端获取null，并没有分配内存-->
+         <input type="reset"  value="clear all">
+    </form> 
+
+
+     
+    <div style="word-spacing: 30px">you are on your own, kid. You always have been.</div>
+    <div style="letter-spacing: 30px">dear reader</div>   
+    <p style="text-indent:2em">two blanks after the beginning</p>
+</body>
+</html>
